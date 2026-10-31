@@ -1,0 +1,45 @@
+name: Connector request
+description: Ask for a service, tool or MCP server you want a Darkmatter outpost to reach.
+title: "Connector: "
+labels: ["connector-request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Tell us what you want the agent to reach. We review every request, answer here, and build the ones that fit into a coming release.
+  - type: input
+    id: service
+    attributes:
+      label: Service
+      description: The software or service, with a link to it.
+      placeholder: Acme Fleet (https://acme.example)
+    validations:
+      required: true
+  - type: dropdown
+    id: reach
+    attributes:
+      label: How it is reached
+      options:
+        - MCP server
+        - HTTP API
+        - Another protocol
+        - Not sure
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Endpoint or protocol details
+      description: The MCP link or API documentation, the protocol and port, and how it authenticates. Never paste a secret.
+  - type: textarea
+    id: outcome
+    attributes:
+      label: What the agent should be able to do with it
+      description: The tasks, in your words. Examples help.
+    validations:
+      required: true
+  - type: input
+    id: team
+    attributes:
+      label: Your team or organization
+      description: Optional.

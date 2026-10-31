@@ -50,6 +50,16 @@ Saved secrets, connector keys and MCP sign-ins among them, are listed by holder 
 
 Connectors supply tools; skills tell the agent how to use them. A skill is a saved procedure the agent follows: a name, a one-paragraph description of when it applies, and a Markdown body of instructions, kept as a `SKILL.md` file. Platform skills ship with each release; personal skills are yours, saved on the outpost. Invoking a skill never runs code or grants credentials, network or permissions: the body is guidance, not authority.
 
+## Request a connector
+
+The software you want the agent to reach is the best signal of what to build next, so ask for it. Open a [connector request](https://github.com/drkm-hq/connectors/issues/new?template=connector-request.yml) with the service, how it is reached (an MCP endpoint, an API, a protocol and port) and what you want the agent to be able to do with it. We review every request, answer on the issue, and build the ones that fit into a coming release, so a connector one team asks for ships for everyone.
+
+Three ways to take part:
+
+- **Ask for one.** A connector request, as above.
+- **Add one that works.** If an MCP server connects from its link, open a pull request that adds it to the table below, with a note on what sign-in it needed.
+- **Report one that will not.** Open an issue with the link (never a secret), the row's status and what Test connection reported.
+
 ## Known to connect
 
 | Service | Kind | Notes |
@@ -62,10 +72,8 @@ Connectors supply tools; skills tell the agent how to use them. A skill is a sav
 | Atlassian | MCP | Connects from its link once an Atlassian admin allowlists the console's origin. |
 | Ramp | MCP | Connects from its link. |
 
-## Add your own
+## Models
 
-- **An MCP server you run or use.** Connect it from its link as above. When it works, open a pull request that adds it to the table, with a note on what sign-in it needed.
-- **A service without MCP.** Open an issue with the service, how it is reached (API, protocol, port) and what the agent should be able to do with it.
-- **Something that will not connect.** Open an issue with the link (never a secret), the row's status and what Test connection reported.
+Darkmatter's models and model cards are published on Hugging Face at [huggingface.co/DarkmatterLabs](https://huggingface.co/DarkmatterLabs).
 
-<p align="center"><sub>© 2026 Darkmatter Labs, Inc. · <a href="https://drkm.ai">drkm.ai</a></sub></p>
+<p align="center"><sub>© 2026 Darkmatter Labs, Inc. · <a href="https://drkm.ai">drkm.ai</a> · <a href="https://github.com/drkm-hq">GitHub</a> · <a href="https://huggingface.co/DarkmatterLabs">Hugging Face</a></sub></p>
