@@ -12,7 +12,7 @@ An outpost does its own work through its capabilities. Everything else it reache
 
 ## Built-in connections
 
-In the console, open **Settings → Connections** and choose **Add connection**. The built-in kinds today are TAK servers, Palantir Foundry, video platforms and media servers, and weather, which the deployment configures. Each has its own form. When a service answers on its usual port nearby, its row reads *Found locally*; nothing is joined or imported until you choose it.
+In the console, an administrator opens **Settings → Connections** and chooses **Add connection**; everyone can see each connection's status and tools. The built-in kinds today are a TAK server, Palantir Foundry, a video platform, a media server, and weather, which the deployment configures. Each has its own form. When a service answers on its usual port nearby, its row reads *Found locally*; nothing is joined or imported until you choose it.
 
 ## MCP servers
 
@@ -20,7 +20,7 @@ Any server that speaks MCP over Streamable HTTP can join, as can a legacy SSE en
 
 What the current release expects of a server:
 
-- OAuth through dynamic client registration or client ID metadata documents. A server that requires a hand-registered OAuth app is not supported yet.
+- OAuth through dynamic client registration or client ID metadata documents. A server that requires a hand-registered OAuth app is not supported.
 - Tools. Local stdio servers, custom headers, MCP resources and prompts are not supported.
 - At most 32 MCP connections per outpost.
 
@@ -66,11 +66,10 @@ Three ways to take part:
 | --- | --- | --- |
 | TAK servers | Built-in | Its own form under Add connection. |
 | Palantir Foundry | Built-in | Its own form under Add connection. |
-| Video platforms and media servers | Built-in | Live feeds and snapshots. |
+| A video platform and a media server | Built-in | Live feeds and snapshots. |
 | Weather | Built-in | Configured by the deployment. |
 | AWS | MCP | Connects from its link. |
 | Atlassian | MCP | Connects from its link once an Atlassian admin allowlists the console's origin. |
-| Ramp | MCP | Connects from its link. |
 
 ## Models
 
