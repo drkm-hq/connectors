@@ -12,7 +12,7 @@ An outpost does its own work through its capabilities. Everything else it reache
 
 ## Built-in connections
 
-In the console, an administrator opens **Settings → Connections** and chooses **Add connection**; everyone can see each connection's status and tools. The built-in kinds today are a TAK server, Palantir Foundry, a video platform, a media server, and weather, which the deployment configures. Each has its own form. When a service answers on its usual port nearby, its row reads *Found locally*; nothing is joined or imported until you choose it.
+In the console, an administrator opens **Settings → Connections** and chooses **Add connection**; everyone can see each connection's status and tools. The built-in kinds today are a TAK server, Palantir Foundry, a video platform and a media server, each with its own form; weather comes configured by the deployment. When a service answers on its usual port nearby, its row reads *Found locally*; nothing is joined or imported until you choose it.
 
 ## MCP servers
 
@@ -66,7 +66,8 @@ Three ways to take part:
 | --- | --- | --- |
 | TAK servers | Built-in | Its own form under Add connection. |
 | Palantir Foundry | Built-in | Its own form under Add connection. |
-| A video platform and a media server | Built-in | Live feeds and snapshots. |
+| Video platform | Built-in | Its own form under Add connection. Live feeds and snapshots. |
+| Media server (MediaMTX) | Built-in | Its own form under Add connection. |
 | Weather | Built-in | Configured by the deployment. |
 | AWS | MCP | Connects from its link. |
 | Atlassian | MCP | Connects from its link once an Atlassian admin allowlists the console's origin. |
